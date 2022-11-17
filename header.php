@@ -3,8 +3,10 @@ require "config.php";
 require "model/db.php";
 require "model/product.php";
 require "model/manufacture.php";
+session_start();
 $product = new Product;
 $getAllProducts = $product->getAllProducts();
+$getAllProducts1 = $product->getAllProducts1();
 $Manufacture = new Manufacture;
 $getAlLManus = $Manufacture->getAlLManus();
 $getfeature = $product->getfeature();
@@ -87,7 +89,7 @@ $getfeature = $product->getfeature();
 					<!-- SEARCH BAR -->
 					<div class="col-md-6">
 						<div class="header-search">
-							<form>
+							<form action="" method="get">
 								<select class="input-select">
 									<option value="0">All Categories</option>
 									<option value="1">Category 01</option>
@@ -185,10 +187,11 @@ $getfeature = $product->getfeature();
 				<!-- NAV -->
 				<ul class="main-nav nav navbar-nav">
 					<li class="active"><a href="index.php">Home</a></li>
-					<li><a href="blank.php">Hot Deals</a></li>
-					<?php foreach($getAlLManus as $value): ?>
-						<li><a href="blank.php"><?php echo $value['manu_name'] ?></a></li>
-						<?php endforeach; ?>
+					<li><a href="index.php">Hot Deals</a></li>
+					<?php foreach ($getAlLManus as $value) : ?>
+						<li><a href="store.php?"><?php $_SESSION['manuname'] = $value['manu_name'];
+																			echo $value['manu_name'] ?></a></li>
+					<?php endforeach; ?>
 				</ul>
 				<!-- /NAV -->
 			</div>
