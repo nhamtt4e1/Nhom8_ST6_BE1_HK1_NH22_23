@@ -8,6 +8,7 @@ $product = new Product;
 $getAllProducts = $product->getAllProducts();
 $getAllProducts1 = $product->getAllProducts1();
 $Manufacture = new Manufacture;
+
 $getAlLManus = $Manufacture->getAlLManus();
 $getfeature = $product->getfeature();
 //var_dump($getAllProducts)
@@ -189,8 +190,7 @@ $getfeature = $product->getfeature();
 					<li class="active"><a href="index.php">Home</a></li>
 					<li><a href="index.php">Hot Deals</a></li>
 					<?php foreach ($getAlLManus as $value) : ?>
-						<li><a href="store.php?"><?php $_SESSION['manuname'] = $value['manu_name'];
-																			echo $value['manu_name'] ?></a></li>
+						<li><a href="store1.php?manu_id=<?php echo $value['manu_id']?>"><?php echo $value['manu_name'] ?></a></li>
 					<?php endforeach; ?>
 				</ul>
 				<!-- /NAV -->

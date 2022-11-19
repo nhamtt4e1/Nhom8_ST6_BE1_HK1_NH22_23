@@ -1,4 +1,3 @@
-<!-- FOOTER -->
 <footer id="footer">
   <!-- top footer -->
   <div class="section">
@@ -17,7 +16,6 @@
             </ul>
           </div>
         </div>
-
         <div class="col-md-3 col-xs-6">
           <div class="footer">
             <h3 class="footer-title">Categories</h3>
@@ -30,9 +28,7 @@
             </ul>
           </div>
         </div>
-
         <div class="clearfix visible-xs"></div>
-
         <div class="col-md-3 col-xs-6">
           <div class="footer">
             <h3 class="footer-title">Information</h3>
@@ -45,7 +41,6 @@
             </ul>
           </div>
         </div>
-
         <div class="col-md-3 col-xs-6">
           <div class="footer">
             <h3 class="footer-title">Service</h3>
