@@ -1,28 +1,5 @@
 <?php include "header.php" ?>
 
-<!-- NAVIGATION -->
-<nav id="navigation">
-	<!-- container -->
-	<div class="container">
-		<!-- responsive-nav -->
-		<div id="responsive-nav">
-			<!-- NAV -->
-			<ul class="main-nav nav navbar-nav">
-				<li class="active"><a href="#">Home</a></li>
-				<li><a href="#">Hot Deals</a></li>
-				<li><a href="#">Categories</a></li>
-				<li><a href="#">Laptops</a></li>
-				<li><a href="#">Smartphones</a></li>
-				<li><a href="#">Cameras</a></li>
-				<li><a href="#">Accessories</a></li>
-			</ul>
-			<!-- /NAV -->
-		</div>
-		<!-- /responsive-nav -->
-	</div>
-	<!-- /container -->
-</nav>
-<!-- /NAVIGATION -->
 
 <!-- BREADCRUMB -->
 <div id="breadcrumb" class="section">
@@ -46,17 +23,21 @@
 </div>
 <!-- /BREADCRUMB -->
 
+
 <!-- SECTION -->
 <div class="section">
 	<!-- container -->
 	<div class="container">
 		<!-- row -->
 		<div class="row">
+		<?php $id = $_GET['id'];
+		 $getProductById = $product->getProductById($id);
+					foreach ($getProductById as $value) : ?>
 			<!-- Product main img -->
 			<div class="col-md-5 col-md-push-2">
 				<div id="product-main-img">
 					<div class="product-preview">
-						<img src="./img/product01.png" alt="">
+						<img src="./img/<?php echo $value['pro_image']?>" alt="">
 					</div>
 
 					<div class="product-preview">
@@ -99,7 +80,7 @@
 			<!-- Product details -->
 			<div class="col-md-5">
 				<div class="product-details">
-					<h2 class="product-name">product name goes here</h2>
+					<h2 class="product-name"><?php echo $value['name'] ?></h2>
 					<div>
 						<div class="product-rating">
 							<i class="fa fa-star"></i>
@@ -111,10 +92,10 @@
 						<a class="review-link" href="#">10 Review(s) | Add your review</a>
 					</div>
 					<div>
-						<h3 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h3>
+						<h3 class="product-price"><?php echo number_format($value['price']) ?>VND</del></h3>
 						<span class="product-available">In Stock</span>
 					</div>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<p><?php echo $value['description']?></p>
 
 					<div class="product-options">
 						<label>
@@ -380,7 +361,9 @@
 				</div>
 			</div>
 			<!-- /product tab -->
+			<?php endforeach; ?>
 		</div>
+
 		<!-- /row -->
 	</div>
 	<!-- /container -->
