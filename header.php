@@ -7,8 +7,13 @@ session_start();
 $product = new Product;
 $getAllProducts = $product->getAllProducts();
 $getAllProducts1 = $product->getAllProducts1();
+<<<<<<< HEAD
 $getAllProducts3 = $product->getAllProducts3();
 $Manufacture = new Manufacture;
+=======
+$Manufacture = new Manufacture;
+
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
 $getAlLManus = $Manufacture->getAlLManus();
 $getfeature = $product->getfeature();
 //var_dump($getAllProducts)
@@ -90,13 +95,21 @@ $getfeature = $product->getfeature();
 					<!-- SEARCH BAR -->
 					<div class="col-md-6">
 						<div class="header-search">
+<<<<<<< HEAD
 							<form action="result.php" method="get">
+=======
+							<form action="" method="get">
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
 								<select class="input-select">
 									<option value="0">All Categories</option>
 									<option value="1">Category 01</option>
 									<option value="1">Category 02</option>
 								</select>
+<<<<<<< HEAD
 								<input class="input" name="keyword" placeholder="Search here">
+=======
+								<input class="input" placeholder="Search here">
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
 								<button class="search-btn">Search</button>
 							</form>
 						</div>
@@ -190,7 +203,11 @@ $getfeature = $product->getfeature();
 					<li class="active"><a href="index.php">Home</a></li>
 					<li><a href="index.php">Hot Deals</a></li>
 					<?php foreach ($getAlLManus as $value) : ?>
+<<<<<<< HEAD
 						<li><a href="store1.php?manu_id=<?php echo $value['manu_id'] ?>"><?php echo $value['manu_name'] ?></a></li>
+=======
+						<li><a href="store1.php?manu_id=<?php echo $value['manu_id']?>"><?php echo $value['manu_name'] ?></a></li>
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
 					<?php endforeach; ?>
 				</ul>
 				<!-- /NAV -->

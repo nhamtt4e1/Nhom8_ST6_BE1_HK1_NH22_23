@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 <!-- FOOTER -->
+=======
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
 <footer id="footer">
   <!-- top footer -->
   <div class="section">
@@ -17,7 +20,10 @@
             </ul>
           </div>
         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
         <div class="col-md-3 col-xs-6">
           <div class="footer">
             <h3 class="footer-title">Categories</h3>
@@ -30,9 +36,13 @@
             </ul>
           </div>
         </div>
+<<<<<<< HEAD
 
         <div class="clearfix visible-xs"></div>
 
+=======
+        <div class="clearfix visible-xs"></div>
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
         <div class="col-md-3 col-xs-6">
           <div class="footer">
             <h3 class="footer-title">Information</h3>
@@ -45,7 +55,10 @@
             </ul>
           </div>
         </div>
+<<<<<<< HEAD
 
+=======
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
         <div class="col-md-3 col-xs-6">
           <div class="footer">
             <h3 class="footer-title">Service</h3>

@@ -20,4 +20,8 @@ class Manufacture extends Db
         $items = $sql->get_result()->fetch_all(MYSQLI_ASSOC);
         return $items; //return an array
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb

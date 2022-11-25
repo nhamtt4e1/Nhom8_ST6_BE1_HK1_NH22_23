@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 <?php include "header.php" ?>
+=======
+<?php include "header.php";
+?>
+
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
 <!-- BREADCRUMB -->
 <div id="breadcrumb" class="section">
 	<!-- container -->
@@ -233,16 +239,32 @@
 					</ul>
 				</div>
 				<!-- /store top filter -->
+<<<<<<< HEAD
 				<?php $namuName = $_SESSION['manuname'];
 				$getProductsByManuName = $Manufacture->getProductsByManuName($namuName);
 				foreach ($getProductsByManuName as $value) : ?>
 					<!-- store products -->
 					<div class="row">
+=======
+				
+				
+					<!-- store products -->
+					
+					<div class="row">
+					<?php $manu_id = $_GET['manu_id'];
+				var_dump($manu_id);
+				$getNewProductByManuid = $product->getNewProductByManuid($manu_id);
+					foreach ($getNewProductByManuid as $value) : ?>
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
 						<!-- product -->
 						<div class="col-md-4 col-xs-6">
 							<div class="product">
 								<div class="product-img">
+<<<<<<< HEAD
 									<img src="./img/product01.png" alt="">
+=======
+									<img src="./img/<?php echo $value['pro_image']?>" alt="">
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
 									<div class="product-label">
 										<span class="sale">-30%</span>
 										<span class="new">NEW</span>
@@ -250,8 +272,13 @@
 								</div>
 								<div class="product-body">
 									<p class="product-category">Category</p>
+<<<<<<< HEAD
 									<h3 class="product-name"><a href="#">echo $value['manu_name']</a></h3>
 									<h4 class="product-price">$980.00 <del class="product-old-price">$990.00</del></h4>
+=======
+									<h3 class="product-name"><a href="#"><?php echo $value['name']?></a></h3>
+									<h4 class="product-price"><?php  echo $value['price'] ?></del></h4>
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
 									<div class="product-rating">
 										<i class="fa fa-star"></i>
 										<i class="fa fa-star"></i>
@@ -271,10 +298,17 @@
 							</div>
 						</div>
 						<!-- /product -->
+<<<<<<< HEAD
 					<?php endforeach;
 				unset($_SESSION['manu_name']) ?>
 					<!-- /store bottom filter -->
 					</div>
+=======
+						<?php endforeach; ?>
+					<!-- /store bottom filter -->
+					</div>
+					
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
 					<!-- /STORE -->
 			</div>
 			<!-- /row -->
@@ -318,6 +352,7 @@
 		<!-- /container -->
 	</div>
 	<!-- /NEWSLETTER -->
+<<<<<<< HEAD
 
 	<!-- FOOTER -->
 	<footer id="footer">
@@ -428,3 +463,6 @@
 	</body>
 
 	</html>
+=======
+<?php include "footer.php"?>
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb

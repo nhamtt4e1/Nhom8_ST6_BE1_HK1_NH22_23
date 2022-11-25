@@ -10,6 +10,7 @@ class Product extends Db
         $items = $sql->get_result()->fetch_all(MYSQLI_ASSOC);
         return $items; //return an array
     }
+<<<<<<< HEAD
 
     public function getAllProducts3()
     {
@@ -20,6 +21,8 @@ class Product extends Db
         $items = $sql->get_result()->fetch_all(MYSQLI_ASSOC);
         return $items; //return an array
     }
+=======
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
     public function getAllProducts1()
     {
 
@@ -76,6 +79,7 @@ class Product extends Db
         $items = $sql->get_result()->fetch_all(MYSQLI_ASSOC);
         return $items; //return an array
     }
+<<<<<<< HEAD
     public function get3ProductsByManuid($manu_id, $page, $perPage)
     {
         // Tính số thứ tự trang bắt đầu
@@ -104,4 +108,8 @@ class Product extends Db
         }
         return $link;
     }
+=======
+>>>>>>> d011adba920244d8295a38641a547739d05db5bb
 }
+
+?>
