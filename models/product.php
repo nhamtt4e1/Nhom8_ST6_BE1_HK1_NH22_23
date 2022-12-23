@@ -98,7 +98,7 @@ class Product extends Db
         $item = $sql->get_result()->fetch_all(MYSQLI_ASSOC);
         return $item; //return an array
     }
-    public function getAllFeaturedSmartwatch()
+    public function getAllFeaturedKeyBoard()
     {
         $sql = self::$connection->prepare("SELECT * FROM products WHERE `feature` = 1 AND `type_id` = 4 LIMIT 3");
         $sql->execute(); //return an object
@@ -106,7 +106,7 @@ class Product extends Db
         $item = $sql->get_result()->fetch_all(MYSQLI_ASSOC);
         return $item; //return an array
     }
-    public function getAllFeaturedSmartwatchPlus()
+    public function getAllFeaturedKeyBoardplus()
     {
         $sql = self::$connection->prepare("SELECT * FROM products WHERE `manu_id` BETWEEN 4 AND 5 AND `feature` = 1 AND `type_id` = 4");
         $sql->execute(); //return an object

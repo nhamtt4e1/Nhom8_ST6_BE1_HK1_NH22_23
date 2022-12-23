@@ -57,7 +57,7 @@ $getTopSellingProducts = $product->getTopSellingProducts();
         <div id="top-header">
             <div class="container">
                 <ul class="header-links pull-left">
-                    <li><a href="tel:0987712063"><i class="fa fa-phone"></i> +84-987-712-063</a></li>
+                    <li><a href="tel:0562563743"><i class="fa fa-phone"></i> +84-652-563-743</a></li>
                     <li><a href="mailto:ngocphongdnp@gmail.com"><i class="fa fa-envelope-o"></i> email@email.com</a></li>
                     <li><a href="https://www.google.com/maps/place/53+%C4%90.+V%C3%B5+V%C4%83n+Ng%C3%A2n,+Linh+Chi%E1%BB%83u,+Th%E1%BB%A7+%C4%90%E1%BB%A9c,+Th%C3%A0nh+ph%E1%BB%91+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.8511574,106.7557547,17z/data=!3m1!4b1!4m5!3m4!1s0x317527bd532d45d9:0x6b46595d312dcffe!8m2!3d10.8511574!4d106.7579434"><i class="fa fa-map-marker"></i>  1734 Stonecoal Road</a></li>
                 </ul>

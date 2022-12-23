@@ -539,8 +539,8 @@ if(isset($_SESSION['user'])){
 
 				<div class="products-widget-slick" data-nav="#slick-nav-5">
 					<div>
-						<?php $getAllFeaturedSmartwatch = $product->getAllFeaturedSmartwatch();
-						foreach ($getAllFeaturedSmartwatch as $value) :
+						<?php $getAllFeaturedKeyBoard = $product->getAllFeaturedKeyBoard();
+						foreach ($getAllFeaturedKeyBoard as $value) :
 						?>
 							<!-- product widget -->
 							<div class="product-widget">
@@ -558,8 +558,8 @@ if(isset($_SESSION['user'])){
 					</div>
 
 					<div>
-					<?php $getAllFeaturedSmartwatchPlus = $product->getAllFeaturedSmartwatchPlus();
-						foreach ($getAllFeaturedSmartwatchPlus as $value) :
+					<?php $getAllFeaturedKeyBoardPlus = $product->getAllFeaturedKeyBoardPlus();
+						foreach ($getAllFeaturedKeyBoardPlus as $value) :
 						?>
 						<!-- product widget -->
 						<div class="product-widget">

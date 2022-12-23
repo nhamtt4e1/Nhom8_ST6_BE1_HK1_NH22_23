@@ -39,8 +39,7 @@ AND `products`.`type_id` = `protypes`.`type_id` ORDER BY `id` DESC");
     }
     public function addProduct($name, $manu, $type_id, $price, $image, $desc, $feature)
     {
-
-        $sql = self::$connection->prepare(" INSERT INTO `products`(`name`, `manu_id`, `type_id`, `price`, `pro_image`, `description`, `feature` ) VALUES(?,?,?,?,?,?,?)");
+        $sql = self::$connection->prepare("INSERT INTO `products`(`name`, `manu_id`, `type_id`, `price`, `pro_image`, `description`, `feature`) VALUES(?,?,?,?,?,?,?)");
         $sql->bind_param("siiissi", $name, $manu, $type_id, $price, $image, $desc, $feature);
         return $sql->execute(); //return an object
     }
